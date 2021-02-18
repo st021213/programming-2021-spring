@@ -1,0 +1,21 @@
+body{
+	background-color : white;
+}
+div{
+	border : 2px solid green;
+}
+.wraper{
+	width : 1000px;
+	min-height : 800px;
+	margin : 15px auto;
+}
+.header{
+	height : 150px;
+	background-color : #0055AA;
+}
+.middle{
+	min-height : 600px;
+}
+.footer{
+	height : 200px;
+}

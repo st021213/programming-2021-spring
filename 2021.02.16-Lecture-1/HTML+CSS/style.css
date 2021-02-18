@@ -1,0 +1,22 @@
+body{
+	background-color : white;
+	font-family : Tahoma;
+}
+div{
+	border : 2px solid green;
+}
+.wraper{
+	width : 1000px;
+	margin : 0 auto;
+	padding : 10px;
+}
+.header{
+	background : #0033AA;
+	height : 150px;
+}
+.middle{
+	min-height : 600px;
+}
+.footer{
+	height : 200px;
+}

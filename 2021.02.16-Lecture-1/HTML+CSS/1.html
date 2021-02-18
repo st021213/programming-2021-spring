@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Верстка слоями</title>
+		<style>
+			body{
+				background-color : white;
+				font-family : Tahoma;
+			}
+			div{
+				border : 2px solid green;
+			}
+			.wraper{
+				width : 1000px;
+				margin : 0 auto;
+				padding : 10px;
+			}
+			.header{
+				background : #0033AA;
+				height : 150px;
+			}
+			.middle{
+				min-height : 600px;
+			}
+			.footer{
+				height : 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wraper"> <!-- wraper -->
+			<div class="header"> <!-- header -->
+			</div> <!-- end of header -->
+			<div class="middle"> <!-- middle -->
+				<a href="index.html">Сейчас я буду верстать тут все слоями!</a><br>
+				<a href="2.html">Вторая страница</a>
+			</div> <!-- end of middle -->
+			<div class="footer"> <!-- footer -->
+			</div> <!-- end of footer -->
+		</div><!-- end of wraper -->
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Верстка слоями</title>
+		<style>
+			body{
+				background-color : white;
+			}
+			div{
+				border : 2px solid green;
+			}
+			.wraper{
+				width : 1000px;
+				min-height : 800px;
+				margin : 15px auto;
+			}
+			.header{
+				height : 150px;
+				background-color : #0055AA;
+			}
+			.middle{
+				min-height : 600px;
+			}
+			.footer{
+				height : 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "wraper"> <!-- wraper start -->
+				
+			<div class="header"> <!-- header start -->
+				Шапка сайта
+			</div> <!-- header end -->
+			<div class="middle"> <!-- middle start -->
+				Содержимое страницы
+			</div> <!-- middle end -->
+			<div class="footer"> <!-- footer start -->
+				Подвал сайта
+			</div> <!-- footer end -->
+			
+		</div> <!-- wraper end -->
+	</body>
+</html>
