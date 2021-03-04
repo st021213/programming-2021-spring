@@ -1,0 +1,6 @@
+0 D:\Students\programming-2021-spring\2020.03.03-Practice-3\Debug\Task2.exe
+1 arg1
+2 arg2
+3 arg3
+Для продолжения нажмите любую клавишу . . . 
+3*412*523/1126*a+(a*b*d+e)*(4+3*a-b)
