@@ -25,7 +25,8 @@ bool isExpression(string str, int& index);
 int main()
 {
 	//является ли данная строка выражением
-	string expr = "3*412*523/1126*a+(a*b*d+e)*(4+3*a-b)";
+	string expr = "3*412*523/112*f*6*a+(a*b*d+e)*(4+3*a-b)";
+	//string expr = "3*43";
 	int index = 0;
 	if (isExpression(expr, index))
 	{
@@ -118,11 +119,9 @@ bool isTerm(string str, int& index)
 		return false;
 	}
 
-	int memIndex = index;
-	if ((str[index] == '*' || str[index] == '/') && !isTerm(str, ++index))
+	if (str[index] == '*' || str[index] == '/')
 	{
-		index = memIndex;
-		return false;
+		return isTerm(str, ++index);
 	}
 	return true;
 	/*
@@ -143,16 +142,15 @@ bool isTerm(string str, int& index)
 
 bool isExpression(string str, int& index)
 {
+	//<выражение> :: = <терм> | <терм> + <выражение> | <терм> – <выражение>
 	if (!isTerm(str, index))
 	{
 		return false;
 	}
 
-	int memIndex = index;
-	if ((str[index] == '+' || str[index] == '-') && !isExpression(str, ++index))
+	if (str[index] == '+' || str[index] == '-')
 	{
-		index = memIndex;
-		return false;
+		return isExpression(str, ++index);
 	}
-	return true;
+	return (str[index] == '\0') || (str[index] == ')');
 }
