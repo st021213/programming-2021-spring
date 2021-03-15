@@ -1,0 +1,9 @@
++4412.125E-53125 -> is real
++4412.125E53125 -> is real
+4412.125E-53125 -> is real
++4d.125E-53125 -> is not real
++4412.1d2E-53125 -> is not real
++4412.125E5d -> is not real
++44d12.125dE-53125 -> is not real
++4412.125E-53d125 -> is not real
+123E5 -> is not real
