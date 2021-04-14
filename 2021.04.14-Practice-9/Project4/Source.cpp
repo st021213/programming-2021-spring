@@ -9,7 +9,12 @@ public:
 	bool isMale;
 
 	Human(int age = 3, string name = "Bob", bool isMale = false) :
-		age(age), name(name), isMale(isMale) { }
+		age(age), name(name), isMale(isMale)
+	{
+		this->age = age;
+		this->name = name;
+		this->isMale = isMale;
+	}
 };
 
 class Student : public Human {
