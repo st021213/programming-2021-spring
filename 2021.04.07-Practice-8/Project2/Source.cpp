@@ -65,5 +65,7 @@ int main()
 	cout << sizeof(Cat) << endl;
 	cout << sizeof(Dog) << endl;
 
+	dog.setAge(53);
+	cout << "getAge() * 5 = " << dog.getAge() * 5 << endl;
 	return 0;
 }
