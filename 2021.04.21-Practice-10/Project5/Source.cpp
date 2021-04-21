@@ -1,4 +1,5 @@
 #include<iostream>
+#include<fstream>
 
 using namespace std;
 
@@ -20,6 +21,19 @@ public:
 		return instance;
 	}
 	int count = 0;
+	void init()
+	{
+		ifstream fin("1.txt");
+		if (fin)
+		{
+			fin >> count;
+		}
+		fin.close();
+	}
+	void dispose()
+	{
+
+	}
 };
 
 Singleton* Singleton::instance = 0;
@@ -37,11 +51,14 @@ void ban()
 int main()
 {
 	Singleton::getInstance()->count = 5;
+	Singleton::getInstance()->init();
+
 	ban();
 	banana();
 	ban();
 	ban();
 	cout <<	Singleton::getInstance()->count++;
 
+	Singleton::getInstance()->dispose();
 	return 0;
 }
